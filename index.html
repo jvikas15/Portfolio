@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vikas Jakhar</title>
+    <link
+      rel="stylesheet"
+      href="portfolio.css
+  "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+
+    />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+
+    <!-- header  -->
+    <header class="header">
+      <a href="#" class="logo"><span>Vikas Jakhar</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- this icon will be used for media queries -->
+      <i class="fa-solid fa-bars" id="menu-icon"></i> 
+      <button class="visit-btn">Visit Github</button>
+    </header>
+
+    <!-- about section  -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <img src="Images/profile.JPG" alt="profilePic" />
+        <div class="info-box">
+          <div class="text">
+            <h3>Hi, I'm</h3>
+            <h1>Vikas Jakhar</h1>
+            <span>Frontend Developer</span>
+          </div>
+          <div class="btn-group">
+            <div class="btn">Download CV</div>
+            <div class="btn">Contact</div>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section  -->
+    <section id="skills" class="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-info">
+        <div class="grid">
+          <div class="grid-card">
+            <h3>Core Web Development</h3>
+            <span>Web Development</span>
+            <h5>Frontend Foundations</h5> 
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i> 
+            <p>Proficient in HTML, CSS, and JavaScript. Skilled in creating responsive, user-friendly interfaces with semantic markup and clean design practices.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Version Control & Tooling</h3>
+            <span>Developer Tools</span>
+            <h5>Efficient & Organized Workflow</h5> 
+            <i class="fa-brands fa-git"></i>
+            <i class="fa-brands fa-github"></i>
+            <p>Experienced with Git & GitHub for version control, using VS Code with integrated terminal and GitHub Copilot to streamline development.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Expanding Tech Stack</h3>
+            <span>Growing Skillset</span>
+            <h5>React & Generative AI</h5>  
+            <i class="fa-solid fa-database"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-solid fa-robot"></i>
+            <p>Learning React to build dynamic apps. Familiar with SQL for databases and adept at leveraging generative AI like ChatGPT to enhance productivity.</p>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <!-- project section  -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Recent Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>ToDo App</h3>
+          <img src="Images/Todo.png" alt="ToDo App interface">
+          <p>A simple and responsive ToDo App built using HTML, CSS, and JavaScript. Users can add tasks with due dates, view them in a styled list, and manage them with localStorage-based persistence.</p>
+          <button class="btn">Github Repo</button>
+        </div>
+
+        <div class="project-card">
+          <h3>E-commerce Website</h3>
+          <img src="Images/E-commerce.png" alt="Ecommerce interface">
+          <p>A fully responsive Myntra clone built using core frontend web technologies. It features real-time wishlist and cart updates, dynamic "Add to Bag" functionality, and automatic bill generation based on selected items.</p>
+          <button class="btn">Github Repo</button>
+        </div>
+
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <img src="Images/Portfolio.png" alt="portfolio interface">
+          <p>A personal portfolio website built using core frontend web technologies. It showcases my projects, skills, and contact information with a clean, responsive design for all devices.</p>
+          <button class="btn">Github Repo</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- contact section  -->
+     <section id="contact" class="contact">
+      <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="input">
+          <input type="text" placeholder="example@email.com">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="btn">Submit</div>
+      </div>
+     </section>
+
+
+     <footer>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <p class="copyright">&copy; All Rights Reserved | Vikas Jakhar</p>
+     </footer>
+
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
