@@ -70,13 +70,15 @@ transition: 0.3s ease-in-out;
 #menu-icon{font-size: 2rem;display: none;}
 
 section{
+  
   min-height: 100vh;
   padding: 8rem 12%;
   width: 100%;
-  position: relative;
+  position: relative; 
+  
 }
 .about{
-  display: flex;
+  display: flex;    
   align-items: center;
   justify-content: center;
 }
@@ -171,12 +173,13 @@ padding:0.5rem;
 gap:10px;
 cursor: pointer;
 transition: 0.2 ease-in-out;
-&:hover{
-  transform: scale(1.03);
+
+  
+}
+.grid-card:hover{transform: scale(1.03);
   background-color: rgba(0, 0, 0, 0.811);
-  color: white;
-}
-}
+  color: white;}
+
 .grid-card i{
   font-size: 1.5rem;
   
@@ -295,3 +298,20 @@ gap: 3rem;
   font-size: 300;
   margin-top: 2rem;
  }
+
+ /* touch effects we will use same classname for diff ele  */
+ .grid-card.toucheffect {
+  transform: scale(1.03);
+  background-color: rgba(0, 0, 0, 0.811);
+  color: white;
+}
+.project-card.toucheffect {
+  background-color: rgba(0, 0, 0, 0.811);
+  color: white;
+  transform: translateY(-10px) scale(1.03);
+}
+.project-card.toucheffect .btn {
+  border: 1px solid yellow;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.811);
+}

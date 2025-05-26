@@ -33,6 +33,7 @@
 }
 
 @media(max-width:768px) {
+    
   header {
     gap: 1rem;
     padding: 1rem 1rem;
@@ -53,7 +54,7 @@
     padding: 1rem 2rem;
     font-size: 1.8rem;
   }
-
+  .projects-grid{display: flex;flex-direction: column;}
   .input-box input::placeholder {
     font-size: 1.5rem;
   }
@@ -68,7 +69,7 @@
 }
 
 
-@media(max-width:600px) {
+@media(max-width:481px) {
   header #menu-icon {
     display: block;
   }
