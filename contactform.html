@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Vikas</title>
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    body{font-family:"outfit";
+    background: linear-gradient(#ffdad5,#fff7f9);
+  }
+  .contact-container{
+    height: 100vh;display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  .contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    gap: 1rem;
+  }
+  .contact-left-title h2{
+    margin-bottom:1rem;
+    color: #a363aa;
+    /* font-weight: 800; */
+    font-size: xx-large;
+  }
+  .contact-left-title hr{
+    border: none;
+    height:5px;width: 100px;background-color: #a363aa ; border-radius: 10px;
+  }
+  
+  .contact-input{text-align: center; width: 30vw;
+    border: none;border-radius:1rem;height:2rem; 
+    /* padding:0 1rem; */
+   
+  }
+   .contact-input:focus{
+      border: 2px solid #ff994f;
+    }
+    
+
+  .contact-left textarea{height: 15vh;}
+  .contact-left button{border: 2px solid #a363aa;border-radius: 1rem;&:focus{background-color: #a363aa;};height: 2rem;width: 6rem; font-weight: bolder;font-family: "outfit"; cursor: pointer;background:linear-gradient(270deg,#ff994f,#ffdad5) ;}
+
+  .contact-right img{ width: 25vw;
+ 
+  }
+  @media(max-width:768px){.contact-input{width: 80vw;}
+.contact-right{display: none;}}
+    
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-left-title">
+        <h2>Get in touch</h2>
+        <hr>
+      </div>
+      <!-- paste this before the code from where you want to send data i.e start point--from web3froms -->
+      <input type="hidden" name="access_key" value="46d52fa1-6c90-4e49-b720-06d96aa5c409">
+      <input type="text" name="username" placeholder="Your Name" class="contact-input" required>
+      <input type="useremail" name="useremail" placeholder="Your email" class="contact-input">
+      <textarea name="message" placeholder="Your message" class="contact-input" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="contact-right">
+      <img src="Images/right_img.png" alt="right_img">
+    </div>
+  </div>
+  <script>
+    //we will use web3forms to get the data from user to our wmail
+
+  </script>
+</body>
+</html>

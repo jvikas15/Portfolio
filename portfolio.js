@@ -16,20 +16,20 @@ menuIcon.addEventListener("click", () => {
 });
 
 // adding touchstarty and touchend --hover action for touchscreen
-
+//fn stores the nodelist then applies toucheffect on each element
 function touchFn(className) {
-  // store the element into an var
+  
   let cards = document.querySelectorAll(className);
-  // now we will use foreeach to apply eventlistner touch to each card/ cards can be nodelist if multiple element have same class
+
   cards.forEach((individualCard) => {
     individualCard.addEventListener("touchstart", () => {
       individualCard.classList.add("toucheffect");
     });
-    individualCard.addEventListener("touchend",()=>{
+    individualCard.addEventListener("touchend",()=>{setTimeout(() => {
       individualCard.classList.remove("toucheffect")
-    })
+    }, 0);})
   });
 }
 
-touchFn(".grid-card");touchFn(".project-card");touchFn(".project-card .btn");
+touchFn(".grid-card");touchFn(".project-card");touchFn(".project-card .btn");touchFn(".input i")
 // added toucheffect class dynamically to the elements --no need to mention in html 

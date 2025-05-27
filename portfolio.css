@@ -83,10 +83,10 @@ section{
   justify-content: center;
 }
 
-.about .about-container{
+.about-container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   gap: 10rem;
 }
 .about img{
@@ -270,15 +270,23 @@ transition: 0.2 ease-in-out;
 
 .input-box input::placeholder{font-size: 3rem;}
 
-.input{
+/* .input{ */
   /* class hai ye element nahi so this will be set to relative so that can have the icon along side input bar  */
   /* we can style and positon the icon with relative to input class element */
-  position: relative;
-}
+  /* position: relative; */
+/* } */
 .input i{
-  position: absolute;font-size: 4rem;
+font-size: 4rem;
 margin-left: 1rem; margin-top: 1.5rem;
+&:hover{
+   background: linear-gradient(to bottom ,#009dff,#ff00ff) ;
+  background-clip: text;
+  color: transparent;
 }
+}
+.input i.toucheffect{background: linear-gradient(to bottom ,#009dff,#ff00ff) ;
+  background-clip: text;
+  color: transparent;}
 
 /* due to above mentioned positions i can now position icon inside the input bar  */
 

@@ -47,21 +47,21 @@
   header .visit-btn {
     display: none;
   }
-  .about-container{
+  /* .about-container{
     flex-direction: column;
-  }
-  .input-box input {
+  } */
+  /* .input-box input {
     padding: 1rem 2rem;
     font-size: 1.8rem;
-  }
+  } */
   .projects-grid{display: flex;flex-direction: column;}
   .input-box input::placeholder {
     font-size: 1.5rem;
   }
 
-  .input-box i {
+  /* .input-box i {
     display: none;
-  }
+  } */
 
   .grid {
     grid-template-columns: repeat(1, 1fr);
