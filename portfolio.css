@@ -91,7 +91,8 @@ section{
 }
 .about img{
   width: 30vw;
-  border-radius:5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px goldenrod;
 }
 .info-box{
   display: flex;
