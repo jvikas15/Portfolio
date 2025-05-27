@@ -47,9 +47,9 @@
   header .visit-btn {
     display: none;
   }
-  /* .about-container{
+  .about-container{
     flex-direction: column;
-  } */
+  }
   /* .input-box input {
     padding: 1rem 2rem;
     font-size: 1.8rem;
