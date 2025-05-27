@@ -73,7 +73,9 @@
   header #menu-icon {
     display: block;
   }
-
+.info-box .text h1{
+  font-size: 2rem;white-space: nowrap;
+}
   .nav-links {
     position: absolute;
     top: 100%;
