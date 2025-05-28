@@ -31,13 +31,14 @@ function touchFn(className) {
   });
 }
 
-touchFn(".grid-card");touchFn(".project-card");touchFn(".project-card .btn");touchFn(".input i")
 // added toucheffect class dynamically to the elements --no need to mention in html 
+touchFn(".grid-card");touchFn(".project-card");touchFn(".project-card .btn");touchFn(".input i")
+
+
 // Collapse menu when a nav link is clicked
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('active');
-    menuIcon.classList.remove('fa-times');  // if you’re toggling icon
-    menuIcon.classList.add('fa-bars');      // if you’re toggling icon
+    
   });
 });
